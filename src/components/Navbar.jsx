@@ -79,13 +79,13 @@ const Navbar = () => {
 
           <div className="flex items-center gap-4 border-l border-gray-500/50 pl-6 h-8">
             <a
-              href="#"
+              href="https://www.instagram.com/pndeveloper/"
               className="text-white hover:text-pink-600 transition hover:scale-110"
             >
               <Instagram size={20} />
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/share/1F1rLUS1Fh/"
               className="text-white hover:text-blue-700 transition hover:scale-110"
             >
               <Facebook size={20} />
@@ -138,26 +138,28 @@ const Navbar = () => {
               Tentang
             </a>
             <a
-              href="#"
+              href="/portfolio"
               onClick={handleLinkClick}
               className="block px-4 py-3 rounded-xl text-base font-medium text-white hover:text-blue-400 hover:bg-white/5 transition-colors"
             >
               Portofolio
             </a>
             <a
-              href="#"
+              href="/pricing"
               onClick={handleLinkClick}
               className="block px-4 py-3 rounded-xl text-base font-medium text-white hover:text-blue-400 hover:bg-white/5 transition-colors"
             >
-              Harga
+              Harga Website
             </a>
           </nav>
 
           {/* CTA Button Mobile/Tablet */}
           <div className="pt-5 mt-4 border-t border-white">
-            <button className="w-full bg-blue-600 text-white px-6 py-3.5 rounded-xl font-bold shadow-md hover:bg-blue-700 transition active:scale-95">
-              Kontak Admin
-            </button>
+            <a href="/contact">
+              <button className="w-full bg-blue-600 text-white px-6 py-3.5 rounded-xl font-bold shadow-md hover:bg-blue-700 transition active:scale-95">
+                Kontak Admin
+              </button>
+            </a>
           </div>
 
           {/* Social Icons Mobile/Tablet */}
