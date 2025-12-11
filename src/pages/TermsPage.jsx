@@ -28,7 +28,7 @@ const TermsPage = () => {
             Terms of Service
           </h1>
           <p className="text-gray-400 text-lg font-text">
-            Syarat dan Ketentuan Layanan PnDeveloper
+            Syarat dan Ketentuan Layanan pndeveloper
           </p>
           <div className="mt-6 text-xs font-mono text-gray-500 uppercase tracking-widest border border-white/10 inline-block px-4 py-1 rounded-full">
             Terakhir Diperbarui: Desember 2025
