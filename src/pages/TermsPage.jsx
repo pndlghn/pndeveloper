@@ -47,7 +47,7 @@ const TermsPage = () => {
             className="bg-[#0f0f0f] border border-white/10 rounded-3xl p-6 md:p-12 lg:p-16 shadow-2xl relative overflow-hidden"
           >
             {/* Top Decoration Line */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-blue-600 via-purple-600 to-blue-600"></div>
 
             <div className="space-y-12 text-gray-300 font-text leading-relaxed text-sm md:text-base">
               {/* PASAL 1 */}
@@ -461,7 +461,7 @@ const TermsPage = () => {
 
           {/* Bottom Note */}
           <div className="text-center mt-12 text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} PnDeveloper. All legal rights
+            &copy; {new Date().getFullYear()} pndeveloper. All legal rights
             reserved.
           </div>
         </div>

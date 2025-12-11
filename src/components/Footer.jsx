@@ -186,7 +186,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} pndeveloper Jasa Pembuatan Website
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <a href="/terms" className="hover:text-white">
+            <a href="/terms-of-service" className="hover:text-white">
               Terms
             </a>
             <a href="#" className="hover:text-white">

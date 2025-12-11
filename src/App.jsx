@@ -29,7 +29,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/terms-of-service" element={<TermsPage />} />
         </Routes>
 
         {/* Footer akan SELALU MUNCUL di semua halaman */}
