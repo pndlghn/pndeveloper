@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/Contact";
+import TermsPage from "./pages/TermsPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/terms" element={<TermsPage />} />
         </Routes>
 
         {/* Footer akan SELALU MUNCUL di semua halaman */}
