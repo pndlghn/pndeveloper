@@ -78,7 +78,11 @@ const PricingCard = ({ pkg, index }) => {
                 <CheckCircle2
                   size={18}
                   className={`shrink-0 mt-0.5 ${
-                    index === 1 ? "text-red-400" : "text-blue-400"
+                    index === 0
+                      ? "text-blue-400"
+                      : index === 1
+                      ? "text-red-400"
+                      : "text-green-400"
                   }`}
                 />
                 <span className="leading-snug">{feature}</span>
@@ -88,10 +92,21 @@ const PricingCard = ({ pkg, index }) => {
         </div>
 
         {/* Footer Note */}
-        <div className="mt-6 pt-4 border-t border-white/5 text-xs text-gray-500 text-center">
-          {index === 1
-            ? "⭐ Paling sering dipilih klien"
-            : "Opsi hemat & efisien"}
+        <div className="mt-6 pt-4 border-t border-white/5 flex items-center gap-2 text-xs text-gray-500">
+          <div
+            className={`w-2 h-2 rounded-full ${
+              index === 0
+                ? "bg-blue-500"
+                : index === 1
+                ? "bg-red-500"
+                : "bg-green-500"
+            }`}
+          ></div>
+          {index === 0
+            ? "Perfect for starters"
+            : index === 1
+            ? "Most popular choice"
+            : "For large scale needs"}
         </div>
       </div>
     </div>
