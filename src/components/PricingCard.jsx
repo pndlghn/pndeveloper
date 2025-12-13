@@ -51,9 +51,7 @@ const PricingCard = ({ pkg, index }) => {
               {pkg.price}
             </span>
           </div>
-          <span className="text-xs text-gray-500 mt-1 block">
-            / tahun (perpanjangan lebih murah)
-          </span>
+          <span className="text-xs text-gray-500 mt-1 block">/ Tahun</span>
         </div>
 
         <a

@@ -294,7 +294,7 @@ const Pricing = () => {
                     </div>
                     {/* Opsional: Text /project atau /year */}
                     <span className="text-gray-500 text-xs mt-1 block">
-                      / one-time payment
+                      / Tahun
                     </span>
                   </div>
 
