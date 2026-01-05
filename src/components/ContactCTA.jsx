@@ -51,7 +51,7 @@ const ContactCTA = () => {
             efisien.
           </p>
           <a
-            href="mailto:pndeveloper@gmail.com"
+            href="mailto:pndeveloperweb@gmail.com"
             className="mt-auto flex items-center gap-2 bg-transparent text-white border border-white/20 px-8 py-3 rounded-full font-bold hover:bg-white hover:text-black transition-all"
           >
             <Mail size={18} />

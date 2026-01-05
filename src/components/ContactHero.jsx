@@ -26,7 +26,7 @@ const ContactHero = () => {
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-text leading-relaxed">
           Kami siap membantu Anda membangun website profesional yang sesuai
           kebutuhan bisnis. Baik untuk konsultasi awal, pertanyaan teknis, atau
-          penawaran kerja sama — kami siap mendengar.
+          penawaran kerja sama kami siap mendengar.
         </p>
       </motion.div>
     </section>

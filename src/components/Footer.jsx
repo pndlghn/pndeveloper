@@ -40,7 +40,7 @@ const Footer = () => {
                   href="mailto:info@nuhaweb.com"
                   className="hover:text-blue-500 transition-colors"
                 >
-                  pndeveloper@gmail.com
+                  pndeveloperweb@gmail.com
                 </a>
               </div>
 

@@ -16,7 +16,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Logic kirim email via mailto
-    window.location.href = `mailto:pandu@example.com?subject=Tanya Website dari ${formData.name}&body=${formData.message}`;
+    window.location.href = `mailto:pndeveloperweb@gmail.com?subject=Tanya Website dari ${formData.name}&body=${formData.message}`;
   };
 
   return (
@@ -45,7 +45,7 @@ const ContactForm = () => {
                   <p className="text-xs text-gray-500 uppercase tracking-wider">
                     Email Kami
                   </p>
-                  <p className="font-medium">pndeveloper@gmail.com</p>
+                  <p className="font-medium">pndeveloperweb@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 text-gray-300">
