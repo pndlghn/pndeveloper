@@ -1,5 +1,8 @@
+/* eslint-disable no-undef */
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ReactPixel from "react-facebook-pixel";
+e;
 
 // Import Layout Components
 import Navbar from "./components/Navbar";
@@ -15,6 +18,18 @@ import ContactPage from "./pages/Contact";
 import TermsPage from "./pages/TermsPage";
 
 function App() {
+  useEffect(() => {
+    // Ganti dengan Pixel ID Anda
+    const pixelId = "1546910876619159";
+
+    const options = {
+      autoConfig: true, // Opsional, default: true
+      debug: false, // Aktifkan true jika masih development
+    };
+
+    ReactPixel.init(pixelId, options);
+    ReactPixel.pageView(); // Mentrack halaman pertama yang dibuka
+  }, []);
   return (
     <Router>
       <div className="font-sans antialiased bg-black min-h-screen text-white">
