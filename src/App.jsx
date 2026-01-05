@@ -7,6 +7,7 @@ e;
 // Import Layout Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import PixelTracker from "./components/PixelTracker";
 import GoogleTranslateWidget from "./components/GoogleTranslateWidget";
 
 // Import Pages
@@ -32,6 +33,7 @@ function App() {
   }, []);
   return (
     <Router>
+      <PixelTracker />
       <div className="font-sans antialiased bg-black min-h-screen text-white">
         {/* Widget & Navbar akan SELALU MUNCUL di semua halaman */}
         {/* <GoogleTranslateWidget /> */}
