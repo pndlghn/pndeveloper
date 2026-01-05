@@ -33,11 +33,11 @@ function App() {
   }, []);
   return (
     <Router>
-      <PixelTracker />
       <div className="font-sans antialiased bg-black min-h-screen text-white">
         {/* Widget & Navbar akan SELALU MUNCUL di semua halaman */}
         {/* <GoogleTranslateWidget /> */}
         <Navbar />
+        <PixelTracker />
 
         {/* Konten akan berubah-ubah sesuai URL */}
         <Routes>
