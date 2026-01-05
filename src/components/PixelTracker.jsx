@@ -7,10 +7,7 @@ const PixelTracker = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Inisialisasi Pixel hanya sekali (saat komponen di-mount)
-    // Ganti 'YOUR_PIXEL_ID' dengan ID Pixel kamu
-    // Atau gunakan process.env.REACT_APP_PIXEL_ID jika pakai .env
-    ReactPixel.init("YOUR_PIXEL_ID");
+    ReactPixel.init("1546910876619159");
   }, []);
 
   useEffect(() => {
