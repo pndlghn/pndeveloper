@@ -18,19 +18,22 @@ import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/Contact";
 import TermsPage from "./pages/TermsPage";
 
+// const PixelTracker = () => {
+//   const location = useLocation();
+
+//   useEffect(() => {
+//     // 1. Ganti '1234567890' dengan ID Pixel asli kamu (STRING LANGSUNG)
+//     // Jangan pakai process.env dulu untuk tes
+//     ReactPixel.init("1546910876619159");
+//   }, []);
+
+//   useEffect(() => {
+//     ReactPixel.pageView();
+//   }, [location]);
+
+//   return null;
+// };
 function App() {
-  useEffect(() => {
-    // Ganti dengan Pixel ID Anda
-    const pixelId = "1546910876619159";
-
-    const options = {
-      autoConfig: true, // Opsional, default: true
-      debug: false, // Aktifkan true jika masih development
-    };
-
-    ReactPixel.init(pixelId, options);
-    ReactPixel.pageView(); // Mentrack halaman pertama yang dibuka
-  }, []);
   return (
     <Router>
       <div className="font-sans antialiased bg-black min-h-screen text-white">
