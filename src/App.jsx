@@ -1,13 +1,10 @@
-/* eslint-disable no-undef */
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ReactPixel from "react-facebook-pixel";
-e;
 
 // Import Layout Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-// import PixelTracker from "./components/PixelTracker";
+import PixelTracker from "./components/PixelTracker";
 import GoogleTranslateWidget from "./components/GoogleTranslateWidget";
 
 // Import Pages
@@ -18,29 +15,14 @@ import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/Contact";
 import TermsPage from "./pages/TermsPage";
 
-const PixelTracker = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    // 1. Ganti '1234567890' dengan ID Pixel asli kamu (STRING LANGSUNG)
-    // Jangan pakai process.env dulu untuk tes
-    ReactPixel.init("1546910876619159");
-  }, []);
-
-  useEffect(() => {
-    ReactPixel.pageView();
-  }, [location]);
-
-  return null;
-};
 function App() {
   return (
     <Router>
+      <PixelTracker />
       <div className="font-sans antialiased bg-black min-h-screen text-white">
         {/* Widget & Navbar akan SELALU MUNCUL di semua halaman */}
         {/* <GoogleTranslateWidget /> */}
         <Navbar />
-        <PixelTracker />
 
         {/* Konten akan berubah-ubah sesuai URL */}
         <Routes>
