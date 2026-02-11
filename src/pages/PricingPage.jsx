@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // Components
 import PricingHero from "../components/section/pricing/PricingHero";
-import PricingTabs from "../components/PricingTabs";
+import PricingTabs from "../components/section/pricing/PricingTabs";
 import PricingInfo from "../components/section/pricing/PricingInfo";
 import PricingCard from "../components/ui/PricingCard";
 
