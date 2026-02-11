@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Zap, ShieldCheck } from "lucide-react";
 
+import RedWebsite from "../../../assets/red-website.webp";
+import BlueWebsite from "../../../assets/blue-website.webp";
+
 const Features = () => {
   return (
     // Responsive Padding: py-16 di mobile, py-24 di desktop
@@ -97,7 +100,7 @@ const Features = () => {
                 </div>
 
                 <img
-                  src="../../assets/blue-website.webp"
+                  src=""
                   alt="Website Profesional"
                   className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition duration-500"
                 />
