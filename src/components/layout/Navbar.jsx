@@ -3,7 +3,7 @@ import { Menu, X, Instagram, Facebook } from "lucide-react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
-import logoImage from "../assets/logo-pndev.png";
+import logoImage from "../../assets/logo-pndev.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

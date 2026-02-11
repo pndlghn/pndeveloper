@@ -1,7 +1,7 @@
 import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import FotoPndeveloper from "../assets/me-image.png";
+import FotoPndeveloper from "../../assets/me-image.png";
 
 const AboutHero = () => {
   // Animasi

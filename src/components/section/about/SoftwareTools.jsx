@@ -2,9 +2,9 @@ import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
-import WordpressLogo from "../assets/wordpress.png";
-import ElementorLogo from "../assets/elementor.png";
-import GoogleAnalyticsLogo from "../assets/google-analytics.png";
+import WordpressLogo from "../../assets/wordpress.png";
+import ElementorLogo from "../../assets/elementor.png";
+import GoogleAnalyticsLogo from "../../assets/google-analytics.png";
 
 const SoftwareTools = () => {
   const fadeInUp = {
