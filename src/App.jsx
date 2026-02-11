@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Import Layout Components
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import PixelTracker from "./components/PixelTracker";
-import GoogleTranslateWidget from "./components/GoogleTranslateWidget";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import PixelTracker from "./components/ui/PixelTracker";
+import GoogleTranslateWidget from "./components/layout/GoogleTranslateWidget";
 
 // Import Pages
 import Home from "./pages/Home";

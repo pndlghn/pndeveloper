@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Components
-import PricingHero from "../components/PricingHero";
+import PricingHero from "../components/section/pricing/PricingHero";
 import PricingTabs from "../components/PricingTabs";
-import PricingInfo from "../components/PricingInfo";
-import PricingCard from "../components/PricingCard";
+import PricingInfo from "../components/section/pricing/PricingInfo";
+import PricingCard from "../components/ui/PricingCard";
 
 // Data
 import { pricingContent } from "../data/pricingData";

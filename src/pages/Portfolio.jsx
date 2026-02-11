@@ -1,6 +1,6 @@
 import React from "react";
-import PortfolioHero from "../components/PortfolioHero";
-import PortfolioGallery from "../components/PortfolioGallery";
+import PortfolioHero from "../components/section/porfolio/PortfolioHero";
+import PortfolioGallery from "../components/section/porfolio/PortfolioGallery";
 
 const Portfolio = () => {
   return (

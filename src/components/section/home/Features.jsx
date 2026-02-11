@@ -64,7 +64,7 @@ const Features = () => {
                 </div>
 
                 <img
-                  src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2669&auto=format&fit=crop"
+                  src="src/assets/Blue_Website.webp"
                   alt="Website Lama vs Baru"
                   className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition duration-500"
                 />
@@ -97,7 +97,7 @@ const Features = () => {
                 </div>
 
                 <img
-                  src="https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=2536&auto=format&fit=crop"
+                  src="src/assets/Red_Website.webp"
                   alt="Website Profesional"
                   className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition duration-500"
                 />

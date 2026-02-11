@@ -1,8 +1,8 @@
 import React from "react";
-import AboutHero from "../components/AboutHero";
-import AboutDetails from "../components/AboutDetails";
-import Stats from "../components/Stats"; // Pastikan nama file Stats.jsx benar
-import SoftwareTools from "../components/SoftwareTools";
+import AboutHero from "../components/section/about/AboutHero";
+import AboutDetails from "../components/section/about/AboutDetails";
+import Stats from "../components/ui/Stats"; // Pastikan nama file Stats.jsx benar
+import SoftwareTools from "../components/section/about/SoftwareTools";
 
 const About = () => {
   return (

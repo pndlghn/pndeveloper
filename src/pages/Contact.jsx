@@ -1,7 +1,7 @@
 import React from "react";
-import ContactHero from "../components/ContactHero";
-import ContactCTA from "../components/ContactCTA";
-import ContactForm from "../components/ContactForm";
+import ContactHero from "../components/section/contact/ContactHero";
+import ContactCTA from "../components/section/contact/ContactCTA";
+import ContactForm from "../components/section/contact/ContactForm";
 
 const ContactPage = () => {
   return (
