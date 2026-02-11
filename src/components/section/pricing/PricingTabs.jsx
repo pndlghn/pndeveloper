@@ -1,5 +1,5 @@
 import React from "react";
-import { pricingContent } from "../data/pricingData";
+import { pricingContent } from "../../../data/pricingData";
 
 const PricingTabs = ({ activeTab, setActiveTab }) => {
   return (
