@@ -35,16 +35,6 @@ const Footer = () => {
               </div>
 
               <div className="flex items-center gap-3">
-                <Mail size={18} />
-                <a
-                  href="mailto:info@nuhaweb.com"
-                  className="hover:text-blue-500 transition-colors"
-                >
-                  pndeveloperweb@gmail.com
-                </a>
-              </div>
-
-              <div className="flex items-center gap-3">
                 <Phone size={18} />
                 <a
                   href="https://wa.me/6285167148132"

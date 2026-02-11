@@ -36,7 +36,7 @@ const AdditionalServices = () => {
           <div>
             {/* Typography: Mobile text-3xl, Desktop text-5xl */}
             <h2 className="text-3xl md:text-5xl font-heading font-bold text-white leading-tight">
-              Layanan Tambahan Untuk
+              Layanan Untuk
               <br className="hidden md:block" />{" "}
               <span className="text-blue-500">Optimasi Website Anda</span>
             </h2>

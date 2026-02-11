@@ -20,7 +20,7 @@ const ContactHero = () => {
         <h1 className="text-4xl md:text-6xl font-bold font-heading mb-6 leading-tight text-white">
           Mulai Perjalanan Digital Anda <br />
           <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-green-400">
-            Bersama Pndeveloper
+            Bersama pndeveloper
           </span>
         </h1>
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-text leading-relaxed">

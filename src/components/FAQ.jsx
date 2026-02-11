@@ -128,7 +128,7 @@ const FAQ = () => {
             Masih punya pertanyaan lain?
           </p>
           <a
-            href="https://wa.me/6281234567890"
+            href="mailto:pndeveloperweb@gmail.com"
             className="inline-flex items-center justify-center bg-white text-black px-6 py-3 md:px-8 md:py-3 rounded-full font-bold hover:bg-gray-200 transition-all text-sm md:text-base"
           >
             Hubungi Tim Support
