@@ -67,7 +67,7 @@ const Features = () => {
                 </div>
 
                 <img
-                  src="../../assets/red-website.webp"
+                  src={RedWebsite}
                   alt="Website Lama vs Baru"
                   className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition duration-500"
                 />
@@ -100,7 +100,7 @@ const Features = () => {
                 </div>
 
                 <img
-                  src=""
+                  src={BlueWebsite}
                   alt="Website Profesional"
                   className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition duration-500"
                 />
