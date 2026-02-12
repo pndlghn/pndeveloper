@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { MessageCircle, X } from "lucide-react"; // Opsional: pakai lucide-react untuk icon
+import { MessageCircle, X } from "lucide-react";
+// eslint-disable-next-line no-unused-vars
+import { motion, AnimatePresence } from "framer-motion"; // Import Framer Motion
 
 const WhatsAppFloating = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const phoneNumber = "628123456789"; // Ganti dengan nomor WhatsApp kamu
+  const phoneNumber = "628123456789";
   const message = "Halo, saya ingin konfirmasi pembayaran.";
 
   const handleOpenChat = () => {
@@ -16,62 +18,87 @@ const WhatsAppFloating = () => {
 
   return (
     <div className="fixed bottom-6 left-6 z-50 flex flex-col items-start">
-      {/* Gambar 2: Popup Message */}
-      {isOpen && (
-        <div className="mb-4 w-72 sm:w-80 bg-[#1a1a1a] rounded-2xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-300">
-          {/* Header Popup */}
-          <div className="bg-[#25D366] p-4 flex justify-between items-center">
-            <div className="flex items-center gap-2 text-white">
-              <MessageCircle size={24} fill="white" />
-              <span className="font-bold">WhatsApp</span>
+      {/* Container AnimatePresence untuk mendeteksi saat komponen di-unmount */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            // Animasi Masuk & Keluar
+            initial={{ opacity: 0, scale: 0.5, y: 50, originX: 0, originY: 1 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{
+              opacity: 0,
+              scale: 0.5,
+              y: 50,
+              transition: { duration: 0.2 },
+            }}
+            transition={{ type: "spring", stiffness: 300, damping: 25 }}
+            className="mb-4 w-72 sm:w-80 bg-[#1a1a1a] rounded-2xl shadow-2xl overflow-hidden"
+          >
+            {/* Header Popup */}
+            <div className="bg-[#25D366] p-4 flex justify-between items-center">
+              <div className="flex items-center gap-2 text-white">
+                <MessageCircle size={24} fill="white" />
+                <span className="font-bold tracking-wide">WhatsApp</span>
+              </div>
+              <button
+                onClick={() => setIsOpen(false)}
+                className="text-white/80 hover:text-white transition-colors"
+              >
+                <X size={20} />
+              </button>
             </div>
-            <button
-              onClick={() => setIsOpen(false)}
-              className="text-white/80 hover:text-white transition-colors"
-            >
-              <X size={20} />
-            </button>
-          </div>
 
-          {/* Body Popup */}
-          <div className="p-4 space-y-3">
-            <div className="bg-[#303030] text-gray-200 p-3 rounded-lg rounded-tl-none text-sm relative">
-              <div className="absolute -left-2 top-0 w-0 h-0 border-t-[10px] border-t-[#303030] border-l-[10px] border-l-transparent"></div>
-              Hello, Selamat datang di **Lobby Market Garut**
+            {/* Body Popup */}
+            <div className="p-4 space-y-4 bg-[#121212]">
+              <motion.div
+                initial={{ x: -20, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.1 }}
+                className="bg-[#303030] text-gray-200 p-3 rounded-lg rounded-tl-none text-[13px] relative shadow-sm"
+              >
+                <div className="absolute -left-2 top-0 w-0 h-0 border-t-[10px] border-t-[#303030] border-l-[10px] border-l-transparent"></div>
+                Hello, Selamat datang di **Lobby Market Garut**
+              </motion.div>
+
+              <motion.div
+                initial={{ x: -20, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                className="bg-[#303030] text-gray-200 p-3 rounded-lg rounded-tl-none text-[13px] relative shadow-sm"
+              >
+                <div className="absolute -left-2 top-0 w-0 h-0 border-t-[10px] border-t-[#303030] border-l-[10px] border-l-transparent"></div>
+                Silahkan klik tombol Open Chat untuk melakukan konfirmasi
+                pembayaran!
+              </motion.div>
             </div>
-            <div className="bg-[#303030] text-gray-200 p-3 rounded-lg rounded-tl-none text-sm relative">
-              <div className="absolute -left-2 top-0 w-0 h-0 border-t-[10px] border-t-[#303030] border-l-[10px] border-l-transparent"></div>
-              Silahkan klik tombol Open Chat untuk melakukan konfirmasi
-              pembayaran!
+
+            {/* Footer */}
+            <div className="p-4 pt-0 bg-[#121212]">
+              <button
+                onClick={handleOpenChat}
+                className="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white py-2.5 px-4 rounded-full font-bold flex items-center justify-center gap-2 transition-all active:scale-95 shadow-lg"
+              >
+                <MessageCircle size={18} fill="white" />
+                Open Chat
+              </button>
             </div>
-          </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
-          {/* Footer/Action Popup */}
-          <div className="p-4 pt-0">
-            <button
-              onClick={handleOpenChat}
-              className="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white py-2 px-4 rounded-full font-semibold flex items-center justify-center gap-2 transition-all active:scale-95"
-            >
-              <MessageCircle size={18} />
-              Open Chat
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* Gambar 1: Floating Button Utama */}
-      <button
+      {/* Button Utama */}
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-[#25D366] p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 group relative"
+        className="bg-[#25D366] p-4 rounded-full shadow-[0_4px_15px_rgba(37,211,102,0.4)] group relative overflow-hidden"
       >
-        <div className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20 group-hover:hidden"></div>
-        <MessageCircle
-          size={32}
-          color="white"
-          fill="white"
-          className="relative z-10"
-        />
-      </button>
+        {/* Efek Ping saat tertutup */}
+        {!isOpen && (
+          <span className="absolute inset-0 rounded-full bg-white animate-ping opacity-20"></span>
+        )}
+        <MessageCircle size={32} color="white" fill="white" />
+      </motion.button>
     </div>
   );
 };
