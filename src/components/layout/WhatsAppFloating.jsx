@@ -17,7 +17,7 @@ const WhatsAppFloating = () => {
   };
 
   return (
-    <div className="fixed bottom-6 left-6 z-50 flex flex-col items-start">
+    <div className="fixed bottom-6 left-6 z-50 flex flex-col items-end">
       {/* Container AnimatePresence untuk mendeteksi saat komponen di-unmount */}
       <AnimatePresence>
         {isOpen && (
@@ -57,7 +57,7 @@ const WhatsAppFloating = () => {
                 className="bg-[#303030] text-gray-200 p-3 rounded-lg rounded-tl-none text-[13px] relative shadow-sm"
               >
                 <div className="absolute -left-2 top-0 w-0 h-0 border-t-10 border-t-[#303030] border-l-10 border-l-transparent"></div>
-                Hello, Selamat datang di **Lobby Market Garut**
+                Halo!, Selamat Datang di Layanan Website Kami
               </motion.div>
 
               <motion.div
@@ -67,8 +67,7 @@ const WhatsAppFloating = () => {
                 className="bg-[#303030] text-gray-200 p-3 rounded-lg rounded-tl-none text-[13px] relative shadow-sm"
               >
                 <div className="absolute -left-2 top-0 w-0 h-0 border-t-10 border-t-[#303030] border-l-10 border-l-transparent"></div>
-                Silahkan klik tombol Open Chat untuk melakukan konfirmasi
-                pembayaran!
+                Silahkan klik tombol Open Chat untuk memulai percakapan.
               </motion.div>
             </div>
 
