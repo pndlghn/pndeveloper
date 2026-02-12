@@ -56,7 +56,7 @@ const WhatsAppFloating = () => {
                 transition={{ delay: 0.1 }}
                 className="bg-[#303030] text-gray-200 p-3 rounded-lg rounded-tl-none text-[13px] relative shadow-sm"
               >
-                <div className="absolute -left-2 top-0 w-0 h-0 border-t-[10px] border-t-[#303030] border-l-[10px] border-l-transparent"></div>
+                <div className="absolute -left-2 top-0 w-0 h-0 border-t-10 border-t-[#303030] border-l-10 border-l-transparent"></div>
                 Hello, Selamat datang di **Lobby Market Garut**
               </motion.div>
 
@@ -66,7 +66,7 @@ const WhatsAppFloating = () => {
                 transition={{ delay: 0.2 }}
                 className="bg-[#303030] text-gray-200 p-3 rounded-lg rounded-tl-none text-[13px] relative shadow-sm"
               >
-                <div className="absolute -left-2 top-0 w-0 h-0 border-t-[10px] border-t-[#303030] border-l-[10px] border-l-transparent"></div>
+                <div className="absolute -left-2 top-0 w-0 h-0 border-t-10 border-t-[#303030] border-l-10 border-l-transparent"></div>
                 Silahkan klik tombol Open Chat untuk melakukan konfirmasi
                 pembayaran!
               </motion.div>
