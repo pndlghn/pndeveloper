@@ -17,13 +17,13 @@ const WhatsAppFloating = () => {
   };
 
   return (
-    <div className="fixed bottom-6 left-6 z-50 flex flex-col items-end">
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
       {/* Container AnimatePresence untuk mendeteksi saat komponen di-unmount */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             // Animasi Masuk & Keluar
-            initial={{ opacity: 0, scale: 0.5, y: 50, originX: 0, originY: 1 }}
+            initial={{ opacity: 0, scale: 0.5, y: 50, originX: 1, originY: 1 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{
               opacity: 0,
