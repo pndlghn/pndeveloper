@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import PixelTracker from "./components/ui/PixelTracker";
+import WhatsAppFloating from "./components/layout/WhatsAppFloating";
 import GoogleTranslateWidget from "./components/layout/GoogleTranslateWidget";
 
 // Import Pages
@@ -36,6 +37,7 @@ function App() {
 
         {/* Footer akan SELALU MUNCUL di semua halaman */}
         <Footer />
+        <WhatsAppFloating />
       </div>
     </Router>
   );
