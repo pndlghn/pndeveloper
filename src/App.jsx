@@ -16,6 +16,9 @@ import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/Contact";
 import TermsPage from "./pages/TermsPage";
 
+//insight
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 function App() {
   return (
     <Router>
@@ -38,6 +41,7 @@ function App() {
         {/* Footer akan SELALU MUNCUL di semua halaman */}
         <Footer />
         <WhatsAppFloating />
+        <SpeedInsights />
       </div>
     </Router>
   );
