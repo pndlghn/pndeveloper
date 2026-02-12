@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"; // Import Framer Motion
 const WhatsAppFloating = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const phoneNumber = "628123456789";
+  const phoneNumber = "6285167148132"; // Ganti dengan nomor WhatsApp tujuan
   const message = "Halo, saya ingin konfirmasi pembayaran.";
 
   const handleOpenChat = () => {
