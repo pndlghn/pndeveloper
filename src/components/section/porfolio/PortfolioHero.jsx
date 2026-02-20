@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { ArrowRight, Layers } from "lucide-react";
 
 // Image
-import projectImage1 from "../../../assets/portfolio-1.png";
-import projectImage2 from "../../../assets/portfolio-2.png";
+import projectImage1 from "../../../assets/portfolio-1.webp";
+import projectImage2 from "../../../assets/portfolio-2.webp";
 
 const PortfolioHero = () => {
   // Animasi Variabel

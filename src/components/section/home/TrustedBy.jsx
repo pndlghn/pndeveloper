@@ -1,5 +1,5 @@
 import React from "react";
-import logoTrustedBy from "../../../assets/logo-TrushtedBy.png";
+import logoTrustedBy from "../../../assets/logo-TrushtedBy.webp";
 
 const TrustedBy = () => {
   // Daftar Logo (Bisa diganti dengan Image URL nanti)

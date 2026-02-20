@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, ArrowRight } from "lucide-react";
 
 // import image
-import PortfolioImage1 from "../../../assets/portfolio-1.png";
-import PortfolioImage2 from "../../../assets/portfolio-2.png";
+import PortfolioImage1 from "../../../assets/portfolio-1.webp";
+import PortfolioImage2 from "../../../assets/portfolio-2.webp";
 
 // --- DATA DUMMY PROYEK ---
 const projects = [

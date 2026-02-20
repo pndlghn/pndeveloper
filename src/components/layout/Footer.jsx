@@ -8,7 +8,7 @@ import {
   MessageCircle,
   HelpCircle,
 } from "lucide-react";
-import logoImage from "../../assets/logo-pndev.png"; // Pastikan path logo sesuai
+import logoImage from "../../assets/logo-pndev.webp"; // Pastikan path logo sesuai
 
 const Footer = () => {
   return (

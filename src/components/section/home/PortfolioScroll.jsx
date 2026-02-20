@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
-import imagePortfolio1 from "../../../assets/portfolio-1.png";
-import imagePortfolio2 from "../../../assets/portfolio-2.png";
+import imagePortfolio1 from "../../../assets/portfolio-1.webp";
+import imagePortfolio2 from "../../../assets/portfolio-2.webp";
 
 // Ganti dengan gambar proyek asli Anda nanti
 const projects = [
