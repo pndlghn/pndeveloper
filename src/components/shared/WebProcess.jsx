@@ -8,12 +8,12 @@ import {
   CheckCheck,
 } from "lucide-react";
 
-import ImageWebProcess1 from "../../assets/1 WP.webp";
-import ImageWebProcess2 from "../../assets/2 WP.webp";
-import ImageWebProcess3 from "../../assets/3 WP.webp";
-import ImageWebProcess4 from "../../assets/4 WP.webp";
-import ImageWebProcess5 from "../../assets/5 WP.webp";
-import ImageWebProcess6 from "../../assets/6 WP.webp";
+import ImageWebProcess1 from "../../assets/1-WP.webp";
+import ImageWebProcess2 from "../../assets/2-WP.webp";
+import ImageWebProcess3 from "../../assets/3-WP.webp";
+import ImageWebProcess4 from "../../assets/4-WP.webp";
+import ImageWebProcess5 from "../../assets/5-WP.webp";
+import ImageWebProcess6 from "../../assets/6-WP.webp";
 
 const WebsiteProcess = () => {
   const containerRef = useRef(null);
@@ -25,42 +25,42 @@ const WebsiteProcess = () => {
       title: "Penawaran",
       desc: "Saya akan merancang dan menawarkan solusi terbaik berupa konsep website berdasarkan kebutuhan bisnis Anda disertai penawaran harga yang transparan.",
       icon: <Handshake size={28} />,
-      image: { ImageWebProcess1 },
+      image: ImageWebProcess1,
     },
     {
       id: 2,
       title: "Persiapan Konten",
       desc: "Anda akan di arahkan dan dibimbing oleh tim sales untuk mengisi dokumen kebutuhan konten website seperti: logo, foto, dan dokumen pendukung lainnya.",
       icon: <FolderOpen size={28} />,
-      image: { ImageWebProcess2 },
+      image: ImageWebProcess2,
     },
     {
       id: 3,
       title: "Pengembangan",
       desc: "Saya akan mengimplementasi website anda bedasarkan konsep dan konten website yang telah dikirimkan lalu dilakukan pengkodean dengan teliti.",
       icon: <Code2 size={28} />,
-      image: { ImageWebProcess3 },
+      image: ImageWebProcess3,
     },
     {
       id: 4,
       title: "Optimasi & Pengujian",
       desc: "Website akan dilakukan pengujian untuk memastikan semua fitur dan fungsionalitas berjalan dengan baik lalu Anda akan dikirimkan preview website untuk revisi.",
       icon: <FlaskConical size={28} />,
-      image: { ImageWebProcess4 },
+      image: ImageWebProcess4,
     },
     {
       id: 5,
       title: "Publish",
       desc: "Saya akan menerbitkan website dengan domain dan hosting yang telah di sepakati lalu menyerahkan akses login website kepada Anda disertai testimonial.",
       icon: <Rocket size={28} />,
-      image: { ImageWebProcess5 },
+      image: ImageWebProcess5,
     },
     {
       id: 6,
       title: "Selesai",
       desc: "Website Anda telah siap digunakan. Kami siap membantu jika diperlukan perawatan, penambahan fitur, atau konsultasi teknis di masa depan.",
       icon: <CheckCheck size={28} />,
-      image: { ImageWebProcess6 },
+      image: ImageWebProcess6,
     },
   ];
 
