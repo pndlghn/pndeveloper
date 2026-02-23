@@ -48,7 +48,7 @@ const Navbar = () => {
             href="/"
             className="text-white hover:text-blue-600 font-light transition font-text"
           >
-            Home
+            Beranda
           </a>
           <a
             href="/pricing"
@@ -131,11 +131,11 @@ const Navbar = () => {
               Beranda
             </a>
             <a
-              href="/about"
+              href="/pricing"
               onClick={handleLinkClick}
               className="block px-4 py-3 rounded-xl text-base font-medium text-white hover:text-blue-400 hover:bg-white/5 transition-colors"
             >
-              Tentang
+              Harga Website
             </a>
             <a
               href="/portfolio"
@@ -145,11 +145,11 @@ const Navbar = () => {
               Portofolio
             </a>
             <a
-              href="/pricing"
+              href="/about"
               onClick={handleLinkClick}
               className="block px-4 py-3 rounded-xl text-base font-medium text-white hover:text-blue-400 hover:bg-white/5 transition-colors"
             >
-              Harga Website
+              Tentang
             </a>
           </nav>
 
