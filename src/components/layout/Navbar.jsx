@@ -51,10 +51,10 @@ const Navbar = () => {
             Home
           </a>
           <a
-            href="/about"
+            href="/pricing"
             className="text-white hover:text-blue-600 font-light transition font-text"
           >
-            Tentang
+            Harga Website
           </a>
           <a
             href="/portfolio"
@@ -63,10 +63,10 @@ const Navbar = () => {
             Portofolio
           </a>
           <a
-            href="/pricing"
+            href="/about"
             className="text-white hover:text-blue-600 font-light transition font-text"
           >
-            Harga Website
+            Tentang
           </a>
 
           <div className="flex items-center">

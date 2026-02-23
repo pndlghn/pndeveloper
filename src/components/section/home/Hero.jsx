@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative pt-32 pb-16 md:pt-40 md:pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-linear-to-bl from-[#555A84] from-10% via-[#17248D] via-20% to-black to-70%"
+      className="relative pt-32 pb-16 md:pt-40 md:pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-linear-to-bl from-[#001aff] from-10% via-[#0e1e95] via-20% to-black to-70%"
     >
       {/* Background decoration (Blob) - Disesuaikan opacity agar tidak mengganggu teks di mobile */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 md:w-96 md:h-96 bg-[#3C467B] rounded-full blur-3xl opacity-40 md:opacity-50 z-0"></div>
@@ -30,7 +30,7 @@ const Hero = () => {
             {/* Badge Kecil */}
             <div className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-blue-100 text-blue-700 text-xs md:text-sm font-semibold mb-6 animate-fade-in-up border border-blue-200">
               <span className="flex h-2 w-2 bg-blue-600 rounded-full mr-2"></span>
-              Jasa Pembuatan Website Terpercaya
+              Jasa Pembuatan Website No #1 Di Indonesia
             </div>
 
             {/* Headline Utama */}
