@@ -29,9 +29,7 @@ const Footer = () => {
             <div className="space-y-4 text-gray-400">
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="mt-1 shrink-0" />
-                <p>
-                  Jl. Garut - Tasikmalaya, RT 01 RW 02, Cilawu, Garut - 44181
-                </p>
+                <p>Jl. Garut - Tasikmalaya, Garut, Jawa Barat - 44111</p>
               </div>
 
               <div className="flex items-center gap-3">
@@ -52,7 +50,7 @@ const Footer = () => {
             <ul className="space-y-4 text-gray-400">
               <li>
                 <a
-                  href="#"
+                  href="/terms-of-service"
                   className="hover:text-blue-500 transition-colors flex items-center gap-2"
                 >
                   <span className="text-gray-600">&gt;</span> Ketentuan Layanan
@@ -86,15 +84,15 @@ const Footer = () => {
                   href="/"
                   className="hover:text-blue-500 transition-colors flex items-center gap-2"
                 >
-                  <span className="text-gray-600">&gt;</span> Home
+                  <span className="text-gray-600">&gt;</span> Beranda
                 </a>
               </li>
               <li>
                 <a
-                  href="/about"
+                  href="/pricing"
                   className="hover:text-blue-500 transition-colors flex items-center gap-2"
                 >
-                  <span className="text-gray-600">&gt;</span> Tentang
+                  <span className="text-gray-600">&gt;</span> Harga Website
                 </a>
               </li>
               <li>
@@ -107,10 +105,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/pricing"
+                  href="/about"
                   className="hover:text-blue-500 transition-colors flex items-center gap-2"
                 >
-                  <span className="text-gray-600">&gt;</span> Harga Website
+                  <span className="text-gray-600">&gt;</span> Tentang
                 </a>
               </li>
               <li>
