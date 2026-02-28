@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { pricingContent } from "../../../data/pricingData";
 
 const Pricing = (activeTab, setActiveTab) => {
