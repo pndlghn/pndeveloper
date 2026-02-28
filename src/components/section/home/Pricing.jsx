@@ -2,6 +2,11 @@ import React from "react";
 import { pricingContent } from "../../../data/pricingData";
 
 const Pricing = ({ activeTab, setActiveTab }) => {
+  // Mencari data konten yang aktif berdasarkan activeTab
+  const activeContent = Object.values(pricingContent).find(
+    (item) => item.id === activeTab
+  );
+
   return (
     <section className="py-20 md:py-28 bg-black relative overflow-hidden font-sans">
       {/* Background Noise/Stars (Opsional) */}
@@ -18,7 +23,7 @@ const Pricing = ({ activeTab, setActiveTab }) => {
           </p>
         </div>
 
-        {/* PRICING TABS */}
+        {/* --- PRICING TABS --- */}
         <div className="sticky top-4 md:top-6 z-40 px-4 mb-12 -mt-10">
           <div className="max-w-fit mx-auto bg-black/80 backdrop-blur-xl border border-white/15 p-1.5 rounded-full shadow-2xl flex items-center gap-1 md:gap-2 overflow-x-auto no-scrollbar">
             {Object.values(pricingContent).map((item) => (
@@ -37,6 +42,37 @@ const Pricing = ({ activeTab, setActiveTab }) => {
             ))}
           </div>
         </div>
+
+        {/* --- PRICING CONTENT (Isi Paket) --- */}
+        {/* Bagian ini yang sebelumnya kurang */}
+        {activeContent && (
+          <div className="max-w-3xl mx-auto bg-white/5 border border-white/10 p-8 rounded-2xl text-white">
+            <h3 className="text-3xl font-bold mb-2">{activeContent.title}</h3>
+
+            {/* Asumsi Anda memiliki properti 'description' dan 'price' di pricingData */}
+            {activeContent.description && (
+              <p className="text-gray-400 mb-6">{activeContent.description}</p>
+            )}
+
+            {activeContent.price && (
+              <div className="text-4xl font-bold mb-8">
+                {activeContent.price}
+              </div>
+            )}
+
+            {/* Asumsi Anda memiliki properti 'features' berbentuk array */}
+            {activeContent.features && (
+              <ul className="flex flex-col gap-4">
+                {activeContent.features.map((feature, index) => (
+                  <li key={index} className="flex items-center gap-3">
+                    <span className="text-green-400">✓</span>
+                    <span className="text-gray-300">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
       </div>
     </section>
   );
