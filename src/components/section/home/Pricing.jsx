@@ -1,12 +1,15 @@
-import React from "react";
+// Tambahkan useState pada import React
+import React, { useState } from "react";
 import { pricingContent } from "../../../data/pricingData";
 import PricingCard from "../../ui/PricingCard";
 
 const Pricing = () => {
+  // Sekarang useState sudah dikenali
   const [activeTab, setActiveTab] = useState("landing");
 
   // Mengambil data paket yang sedang aktif
   const currentData = pricingContent[activeTab];
+
   if (!currentData) {
     return (
       <div className="text-white text-center py-20">
@@ -14,6 +17,7 @@ const Pricing = () => {
       </div>
     );
   }
+
   return (
     <section className="py-20 md:py-28 bg-black relative overflow-hidden font-sans">
       {/* Background Noise/Stars (Opsional) */}
@@ -52,7 +56,8 @@ const Pricing = () => {
 
         {/* PRICING CARDS */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          {currentData.packages.map((pkg, index) => (
+          {/* Pastikan currentData.packages benar-benar array */}
+          {currentData.packages?.map((pkg, index) => (
             <PricingCard key={index} pkg={pkg} index={index} />
           ))}
         </div>
