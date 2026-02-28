@@ -2,7 +2,18 @@ import React from "react";
 import { pricingContent } from "../../../data/pricingData";
 import PricingCard from "../../ui/PricingCard";
 
-const Pricing = ({ activeTab, setActiveTab }) => {
+const Pricing = () => {
+  const [activeTab, setActiveTab] = useState("landing");
+
+  // Mengambil data paket yang sedang aktif
+  const currentData = pricingContent[activeTab];
+  if (!currentData) {
+    return (
+      <div className="text-white text-center py-20">
+        Loading data or Error...
+      </div>
+    );
+  }
   return (
     <section className="py-20 md:py-28 bg-black relative overflow-hidden font-sans">
       {/* Background Noise/Stars (Opsional) */}
