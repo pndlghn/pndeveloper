@@ -1,4 +1,4 @@
-import { Rocket, Globe, ShoppingCart } from "lucide-react";
+import { Rocket, Globe, ShoppingCart, Plane } from "lucide-react";
 import React from "react";
 
 export const pricingContent = {
