@@ -234,7 +234,7 @@ export const pricingContent = {
   travel: {
     id: "travel",
     title: "Tour & Travel",
-    icon: <Globe />,
+    icon: <Car />,
     reason: {
       title: "Tampilkan Destinasi & Paket Wisata",
       desc: "Sempurna untuk agen travel yang ingin memamerkan paket wisata dengan sistem pemesanan yang mudah bagi pelanggan.",
