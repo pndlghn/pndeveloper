@@ -29,7 +29,7 @@ const projects = [
     description:
       "Website profil perusahaan profesional yang menampilkan porduk, form pengisian utnuk menjadi reseller, dan profil perusahaan.",
     tech: ["Wordpress", "Elementor"],
-    link: "https://picnicdodolgarut.com/",
+    link: "https://picnicdodolgarut.id/",
   },
   // 3. LANDING PAGE (KOSONG - Tidak ada data di array ini)
 ];
