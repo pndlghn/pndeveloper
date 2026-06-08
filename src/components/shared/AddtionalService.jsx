@@ -3,7 +3,7 @@ import { Wrench, Search, Settings, ArrowRight } from "lucide-react";
 
 const AdditionalServices = () => {
   // Nomor WA Admin
-  const phoneNumber = "6285167148132";
+  const phoneNumber = "6289630180966";
 
   const services = [
     {

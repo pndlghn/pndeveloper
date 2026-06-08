@@ -165,7 +165,7 @@ const Navbar = () => {
           {/* Social Icons Mobile/Tablet */}
           <div className="flex justify-center items-center gap-8 pt-6">
             <a
-              href="https://www.instagram.com/pndeveloper/"
+              href="https://www.instagram.com/pndevweb/"
               className="text-gray-400 hover:text-pink-500 transition-colors duration-300"
             >
               <Instagram size={28} /> {/* Ukuran Icon Tetap */}

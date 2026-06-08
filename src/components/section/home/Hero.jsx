@@ -55,24 +55,13 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto px-4 sm:px-0">
               {/* Tombol 1: Konsultasi Gratis */}
               <a
-                href="https://wa.me/6285167148132?text=Halo%20admin,%20saya%20ingin%20konsultasi%20gratis%20mengenai%20website"
+                href="https://wa.me/6285111331955?text=Halo%20admin,%20saya%20ingin%20konsultasi%20gratis%20mengenai%20website"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => handleCTAClick("Konsultasi Gratis", "Lead")} // Kita kategorikan Lead karena niat konsultasi lebih tinggi
                 className="flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-3.5 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-600/30 transition-all transform hover:-translate-y-1 w-full sm:w-auto cursor-pointer"
               >
                 Konsultasi Gratis <ArrowRight size={20} />
-              </a>
-
-              {/* Tombol 2: Chat WhatsApp */}
-              <a
-                href="https://wa.me/6285167148132?text=Halo%20admin,%20saya%20ingin%20bertanya%20lewat%20WhatsApp"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => handleCTAClick("Chat WhatsApp", "Contact")} // Kategori Contact untuk pertanyaan umum
-                className="flex items-center justify-center gap-2 bg-white text-gray-700 border border-gray-200 px-8 py-3.5 md:py-4 rounded-full font-bold text-base md:text-lg hover:border-blue-600 hover:text-blue-600 transition-all w-full sm:w-auto cursor-pointer"
-              >
-                <MessageCircle size={20} /> Chat WhatsApp
               </a>
             </div>
 

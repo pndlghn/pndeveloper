@@ -35,10 +35,10 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone size={18} />
                 <a
-                  href="https://wa.me/6285167148132"
+                  href="https://wa.me/6285111331955"
                   className="hover:text-blue-500 transition-colors"
                 >
-                  (+62) 851-6714-8132
+                  (+62) 851-1133-1955
                 </a>
               </div>
             </div>
@@ -141,7 +141,7 @@ const Footer = () => {
 
               {/* Tombol Chat Admin (Outline) */}
               <a
-                href="https://wa.me/6285167148132?text=Halo%20Admin,%20saya%20ingin%20bertanya%20mengenai%20jasa%20pembuatan%20website"
+                href="https://wa.me/6285111331955?text=Halo%20Admin,%20saya%20ingin%20bertanya%20mengenai%20jasa%20pembuatan%20website"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full border border-white text-white font-bold py-3 px-6 rounded-full flex items-center justify-center gap-2 hover:bg-white/10 transition-all cursor-pointer"
@@ -158,7 +158,7 @@ const Footer = () => {
                 <Facebook size={20} />
               </a>
               <a
-                href="https://www.instagram.com/pndeveloper"
+                href="https://www.instagram.com/pndevweb"
                 className="bg-white/5 p-2 rounded-lg hover:bg-pink-600 transition-colors text-white"
               >
                 <Instagram size={20} />

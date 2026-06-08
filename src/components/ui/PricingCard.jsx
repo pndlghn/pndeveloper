@@ -55,7 +55,7 @@ const PricingCard = ({ pkg, index }) => {
         </div>
 
         <a
-          href="https://wa.me/6285167148132?text=Halo%20Admin,%20saya%20ingin%20memesan%20paket%20website%20ini"
+          href="https://wa.me/6285111331955?text=Halo%20Admin,%20saya%20ingin%20memesan%20paket%20website%20ini"
           target="_blank"
           rel="noopener noreferrer"
           // Tambahkan 'block text-center' agar teks berada di tengah tombol
