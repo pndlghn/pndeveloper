@@ -2,6 +2,7 @@ import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { MessageCircle, Code2, Mail } from "lucide-react";
+import { trackLead } from "../../../lib/fbPixel";
 
 const ContactCTA = () => {
   return (
@@ -27,6 +28,7 @@ const ContactCTA = () => {
             href="https://wa.me/6285111331955" // Ganti nomormu
             target="_blank"
             rel="noreferrer"
+            onClick={() => trackLead("Contact Page - Sales WhatsApp")}
             className="mt-auto flex items-center gap-2 bg-blue-600 text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-blue-600/20 hover:bg-blue-700 transition-all"
           >
             <MessageCircle size={18} />

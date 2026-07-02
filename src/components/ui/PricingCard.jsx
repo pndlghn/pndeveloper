@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckCircle2 } from "lucide-react";
+import { trackLead } from "../../lib/fbPixel";
 
 const PricingCard = ({ pkg, index }) => {
   // Logic Styling berdasarkan index (0: Biru, 1: Merah, 2: Hijau)
@@ -58,6 +59,7 @@ const PricingCard = ({ pkg, index }) => {
           href="https://wa.me/6285111331955?text=Halo%20Admin,%20saya%20ingin%20memesan%20paket%20website%20ini"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackLead(`Pricing - ${pkg.level}`)}
           // Tambahkan 'block text-center' agar teks berada di tengah tombol
           className={`w-full py-4 rounded-xl text-sm font-bold tracking-wide transition-all mb-8 block text-center ${style.btn}`}
         >

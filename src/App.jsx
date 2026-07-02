@@ -4,9 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Import Layout Components
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-import PixelTracker from "./components/ui/PixelTracker";
+import PixelTracker from "./components/pixel/PixelPageView";
 import WhatsAppFloating from "./components/layout/WhatsAppFloating";
-import GoogleTranslateWidget from "./components/layout/GoogleTranslateWidget";
 
 // Import Pages
 import Home from "./pages/Home";
@@ -22,7 +21,6 @@ function App() {
       <PixelTracker />
       <div className="font-sans antialiased bg-black min-h-screen text-white">
         {/* Widget & Navbar akan SELALU MUNCUL di semua halaman */}
-        {/* <GoogleTranslateWidget /> */}
         <Navbar />
 
         {/* Konten akan berubah-ubah sesuai URL */}

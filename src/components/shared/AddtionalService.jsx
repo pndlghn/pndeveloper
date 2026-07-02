@@ -1,5 +1,6 @@
 import React from "react";
 import { Wrench, Search, Settings, ArrowRight } from "lucide-react";
+import { trackLead } from "../../lib/fbPixel";
 
 const AdditionalServices = () => {
   // Nomor WA Admin
@@ -85,6 +86,7 @@ const AdditionalServices = () => {
                 )}`}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => trackLead(`Additional Service - ${item.title}`)}
                 className="mt-auto w-full py-3 px-6 rounded-xl font-semibold text-white border border-white/20 hover:bg-white hover:text-black hover:border-white transition-all duration-300 flex items-center justify-center gap-2 group/btn"
               >
                 Dapatkan Layanan

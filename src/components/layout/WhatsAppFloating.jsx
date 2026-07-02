@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MessageCircle, X } from "lucide-react";
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion"; // Import Framer Motion
+import { trackLead } from "../../lib/fbPixel";
 
 const WhatsAppFloating = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +11,7 @@ const WhatsAppFloating = () => {
   const message = "Halo, saya ingin konfirmasi pembayaran.";
 
   const handleOpenChat = () => {
+    trackLead("Floating WhatsApp Button");
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;

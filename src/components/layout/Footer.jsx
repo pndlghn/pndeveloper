@@ -9,6 +9,7 @@ import {
   HelpCircle,
 } from "lucide-react";
 import logoImage from "../../assets/logo-pndev.webp"; // Pastikan path logo sesuai
+import { trackLead } from "../../lib/fbPixel";
 
 const Footer = () => {
   return (
@@ -36,6 +37,7 @@ const Footer = () => {
                 <Phone size={18} />
                 <a
                   href="https://wa.me/6285111331955"
+                  onClick={() => trackLead("Footer - Nomor Telepon")}
                   className="hover:text-blue-500 transition-colors"
                 >
                   (+62) 851-1133-1955
@@ -144,6 +146,7 @@ const Footer = () => {
                 href="https://wa.me/6285111331955?text=Halo%20Admin,%20saya%20ingin%20bertanya%20mengenai%20jasa%20pembuatan%20website"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackLead("Footer - Chat Admin")}
                 className="w-full border border-white text-white font-bold py-3 px-6 rounded-full flex items-center justify-center gap-2 hover:bg-white/10 transition-all cursor-pointer"
               >
                 <MessageCircle size={20} /> Chat Admin

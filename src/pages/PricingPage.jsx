@@ -11,6 +11,9 @@ import PricingCard from "../components/ui/PricingCard";
 // Data
 import { pricingContent } from "../data/pricingData";
 
+// Pixel
+import { trackLead } from "../lib/fbPixel";
+
 const PricingPage = () => {
   const [activeTab, setActiveTab] = useState("landing");
 
@@ -60,7 +63,7 @@ const PricingPage = () => {
             href="https://wa.me/6285167148132?text=Halo%20Admin,%20saya%20ingin%20memesan%20paket%20website%20ini"
             target="_blank"
             rel="noopener noreferrer"
-            // Tambahkan 'block text-center' agar teks berada di tengah tombol
+            onClick={() => trackLead("Pricing Page - Global CTA")}
             className="text-white underline underline-offset-4 hover:text-blue-400 transition"
           >
             Konsultasi Gratis via WhatsApp

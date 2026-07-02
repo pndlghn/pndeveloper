@@ -1,18 +1,12 @@
 import React from "react";
 import { ArrowRight, CheckCircle, MessageCircle } from "lucide-react";
 
-import ReactPixel from "react-facebook-pixel";
+import { trackLead } from "../../../lib/fbPixel";
 
 const Hero = () => {
-  // Fungsi handler untuk tracking
-  const handleCTAClick = (buttonName, eventType = "Contact") => {
-    // Memicu event ke Meta Pixel
-    ReactPixel.track(eventType, {
-      content_name: buttonName,
-      content_category: "Freelance Service",
-      value: 0, // Anda bisa isi estimasi nilai project jika mau
-      currency: "IDR",
-    });
+  // Fungsi handler untuk tracking Lead saat tombol WhatsApp diklik
+  const handleCTAClick = (buttonName) => {
+    trackLead(buttonName);
   };
 
   return (
@@ -58,7 +52,7 @@ const Hero = () => {
                 href="https://wa.me/6285111331955?text=Halo%20admin,%20saya%20ingin%20konsultasi%20gratis%20mengenai%20website"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => handleCTAClick("Konsultasi Gratis", "Lead")} // Kita kategorikan Lead karena niat konsultasi lebih tinggi
+                onClick={() => handleCTAClick("Konsultasi Gratis")}
                 className="flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-3.5 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-600/30 transition-all transform hover:-translate-y-1 w-full sm:w-auto cursor-pointer"
               >
                 Konsultasi Gratis <ArrowRight size={20} />
